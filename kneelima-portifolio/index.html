@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portifolio-website</title>
+</head>
+
+
+
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+             <h1>K.Neelima</h1>
+         
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                  
+                    <li><a href="#portifolio">Portifolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                   <li><a href="" class="btn1">Download Resume</a></li>
+                   <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+           
+             <h1>Hi, I'm <br><span>Kundrapu Neelima</span></h1>
+             <p>UI/UX</p>
+             <div class="card">
+              <div class="card-inner">
+                  <div class="card-front">
+                      <p>DEVELOPER</p>
+                  </div>
+                  <div class="card-back">
+                      <p>DESIGNER</p>
+                  </div>
+              </div>
+        </div>
+        </div>
+      </div>  
+    </div>
+        <!-- ---------about---------->
+        <div id="about"> 
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/myimage-1.pn" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>Passionate UI/UX Developer with hands-on experience in React, JavaScript, HTML, CSS, Figma, and WordPress. Seeking to leverage my skills and collaborative abilities to contribute to a dynamic team and create engaging, user-centered digital experiences.</p>
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education', this)">Education</p>
+                        <p class="tab-links" onclick="opentab('skills' , this)"> Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('skills2' , this)">Soft Skills</p>
+                        
+                      </div>
+                      <div class="tab-contents active-tab" id="education">
+                        <ul>
+                         <li><span>2024</span><span>UI/UX Designing training at Tech Mahindra Acadamy</span><br>Designing websites/webapplications</li>
+                         <li><span>2019-2021</span><br>Msc.Chemisty at Gitam University</li>
+                         <li><span>2016-2019 </span><br>Bsc.Chemistry at Gitam University</li>
+                        </ul> 
+                       </div>
+                      <div class="tab-contents" id="skills">
+                       <ul>
+                        <li><span>UI/UX</span><br>Designing websites/webapplications</li>
+                        <li><span>web development</span><br>Designing websites/webapplications</li>
+                        <li><span>web development</span><br>Designing websites/webapplications</li>
+                       </ul> 
+                      </div>
+                      <div class="tab-contents" id="skills2">
+                        <ul>
+                         <li>Good Communication</li>
+                         <li><span>web development</span><br>Designing websites/webapplications</li>
+                         <li><span>web development</span><br>Designing websites/webapplications</li>
+                        </ul> 
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- --------------portifolio-------------- -->
+       <div id="portifolio">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="fly"></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="post"></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="weblayout"></div>
+            </div>
+          </div>
+        </div>
+       </div> 
+      <!-- -------------------contact--------------- -->
+       <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me </h1>
+              <p><i class="fa-solid fa-paper-plane"></i>afjjgg@gmail.com</p>
+              <p><i class="fa-solid fa-square-phone"></i>6556566326</p>
+              <div class="social-icons">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </div>
+              <a href="images/Neelima Soft 16.pdf" download class="btn1 btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="enter your name" required>
+                <input type="email" name="Email" placeholder="enter your email" required>
+                <textarea name="Message" rows="6" placeholder="your Message" ></textarea>
+                <button type="submit" class="btn1 btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+
+       </div><div class="copyright">
+        <p> <i class="fa-solid fa-copyright"></i> Neelima. All Rights Reserved.
+
+        </p>
+       </div>
+     
+     
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname,element){
+            for( let tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for( let tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+                
+            }
+            element.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            <!-- -----card----- -->
+           
+        }
+        setInterval(function() {
+          var cardInner = document.querySelector('.card-inner');
+          cardInner.classList.toggle('rotate');
+      }, 2000);
+
+      </script>
+      <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+          sidemenu.style.right = "0";
+        }
+        function closemenu(){
+          sidemenu.style.right = "-200px";
+        }
+      </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzNjK9-xQfgUt4KEhCEliDPNY0AY741IxE4iCqxyY1dIbOpgEui3jot2ejBkZdQJtzmoQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML="Message sent successfully"
+              setTimeout(function(){
+                msg.innerHTML=""
+              },5000)
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
