@@ -221,6 +221,9 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+/* From Uiverse.io by gharsh11032000 */ 
+
+  
 /* ------------------portifolio-------------------- */
 #portifolio{
     /* padding:80px 0; */
